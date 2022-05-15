@@ -1,3 +1,11 @@
+:root {
+    --darkblue:#0F2027;
+    --mediumblue:#2C5364;
+    --anotherblue: #203A43;
+    --softblue:#4a6ef1;
+    --off-white: #f2f2f2;
+}
+
 * {
     font-family: Arial, Helvetica, sans-serif;
     margin: 0%;
@@ -15,7 +23,11 @@ body {
     width: 100%;
     max-width: 1000px;
     margin: 0 auto;
-    background-color: #292929;
+    background-color: #8BC6EC;
+    background-image: linear-gradient(135deg, #0F2027, #203A43, #2C5364);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
 }
 
 
@@ -30,77 +42,8 @@ a {
 }
 
 
-.mainContainer {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-top: 2rem;
-}
 
-.mainPhoto {
-    border-radius: 10px;
-    width: 100%;
-    max-width: 400px;
-    box-shadow: 0px 10px 25px rgb(31, 30, 30);
-    transition: 0.3s;
-}
 
-.mainPhoto:hover {
-    transform: scale(103%);
-}
-
-.textContainer {
-    text-align: left;
-    padding: 1rem;
-    color: #f2f2f2;
-    width: 100%;
-    max-width: 400px;
-}
-
-.textContainer p {
-    padding-top: 1rem;
-}
-
-.textContainer h1 {
-    font-size: 3.5em;
-}
-
-.textContainer button {
-    padding: 0.5rem 1rem;
-    background: #f2f2f2;
-    margin-top: 1rem;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    box-shadow: 0px 10px 10px rgb(31, 30, 30);
-    transition: 0.3s;
-}
-
-.textContainer button:hover {
-    transform: scale(103%);
-}
-
-@media(max-width:600px) {
-    .textContainer h1 {
-        font-size: 2.5em;
-    }
-
-    .mainPhoto {
-        max-width: 300px;
-        margin-top: 1rem;
-    }
-}
-
-@media (max-width:400px) {
-    .mainContainer {
-        display: block;
-
-    }
-
-    .textContainer {
-        padding-top: 0;
-        text-align: center;
-        justify-content: center;
-    }
-
+.aboutMe {
+    padding-top: 5rem;
 }

@@ -4,12 +4,12 @@ header {
     width: 100%;
     justify-content: space-between;
     padding: 1rem;
-    color: #f2f2f2;
+    color: var(--off-white);
 }
 
 .btnMobile {
     display:none;
-    color: #f2f2f2;
+    color: var(--off-white);
 }
 
 .menuTopics {
@@ -19,12 +19,14 @@ header {
 .menuTopic {
     padding: 1rem;
     margin-left: 2rem;
-    color: #f2f2f2;
+    color: var(--off-white);
     border-radius: 4px;
+    transition: 0.3s;
 }
 
 .menuTopic:hover {
-    background-color: #909090;
+    background-color: var(--mediumblue);
+    color: var(--off-white);
 }
 
 @media (max-width:600px) {
@@ -94,7 +96,7 @@ header {
     .navMenuActive .menuTopics {
         visibility: visible;
         height: calc(100vh - 4rem);
-        background-color: #f2f2f2; 
+        background-color: var(--off-white); 
         overflow-y: auto;
     }
     
