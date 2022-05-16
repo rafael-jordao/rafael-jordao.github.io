@@ -37,12 +37,3 @@
 }
 
 
-
-@media (max-width: 768px) {
-    .DFlexContainer {
-        display: block;
-        gap: 2rem;
-        justify-content: center;
-        padding: 3rem;
-    }
-}
