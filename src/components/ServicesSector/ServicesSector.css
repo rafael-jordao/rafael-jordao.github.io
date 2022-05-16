@@ -1,0 +1,12 @@
+.DFlexContainer {
+    display: flex;
+    gap: 4rem;
+    justify-content: center;
+    padding: 3rem;
+}
+
+.services h1 {
+    padding-top: 6rem;
+    color: var(--off-white);
+    font-size: 3rem;
+}

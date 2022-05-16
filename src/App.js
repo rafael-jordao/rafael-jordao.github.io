@@ -1,33 +1,53 @@
 import React from "react";
 import Header from "./components/Header/Header";
 import MainContent from "./components/MainContent/MainContent";
-import ServiceCard from "./components/ServiceCard/ServiceCard";
+import ServiceSectors from "./components/ServicesSector/ServicesSector";
 
 const App = () => {
+  const [ backToTop, setBackToTop ] = React.useState(false)
 
+  React.useEffect(() => {
+      window.addEventListener("scroll", () => {
+          if(window.scrollY > 100) {
+              setBackToTop(true)
+          }
+      })
+  }, [])
+
+  const scrollUp = () => {
+      window.scrollTo({
+          top: 0,
+          behavior: "smooth",
+      })
+  }
+ 
+  const styleBtn = {
+    borderRadius: '50px',
+    background: '#4a6ef1',
+    border: 'none',
+    padding: '0.5rem',
+    color: '#f2f2f2',
+    cursor: 'pointer',
+    margin: '1rem',
+    transition: '.3s',
+    boxShadow: '0px 10px 20px var(--darkblue)'
+  }
+  
   return (
     <div className="App">
       <Header />
       <MainContent />
-
-      <div className="services">
-        <div className="">
-          <h1 className="titleAboutMe">Serviços</h1>
-        </div>
-       
-        <div className="DFlexContainer">
-          <ServiceCard 
-          title="Design Gráfico"
-          paragraph="Some quick example text to build on the card title and make up the bulk of the card's content."/>
-          <ServiceCard 
-          title="Desenvolvimento Front-End"
-          paragraph="Some quick example text to build on the card title and make up the bulk of the card's content."/>
-        </div>
+      <ServiceSectors />
       
-      </div>
+      {backToTop && (
+                <button style={styleBtn} onClick={scrollUp}>^</button>
+            )}
     </div>
   )
 };
 
 
 export default App;
+
+
+

@@ -1,11 +1,11 @@
-.services h1{
-    padding-top: 6rem;
-    color: var(--off-white);
-    font-size: 3.5rem;
-}
 
 .cardContainer {
     padding-top: 3rem;
+    cursor: pointer;
+    transition:0.3s;
+}
+.cardContainer:hover {
+    transform: scale(103%);
 }
 
 .paddingContainer h2, p {
@@ -26,12 +26,17 @@
     box-shadow: 0px 10px 15px var(--darkblue);
 }
 
-.DFlexContainer {
-    display: flex;
-    gap: 4rem;
-    justify-content: center;
-    padding: 3rem;
+
+.iconContainer {
+    padding: 2rem;
 }
+
+.icon{
+    width: 100%;
+    max-width: 80px;
+}
+
+
 
 @media (max-width: 768px) {
     .DFlexContainer {

@@ -3,6 +3,7 @@ import "./Header.css"
 
 const Header = () => {
     const [toggleButton, setToggleButton] = React.useState(false)
+    
 
     const handleClick = () => {
         setToggleButton(!toggleButton)
@@ -25,7 +26,6 @@ const Header = () => {
                     <a href="./"><li className="menuTopic">Contato</li></a>
                 </ul>
             </nav>
-
         </header>
     )
 }
