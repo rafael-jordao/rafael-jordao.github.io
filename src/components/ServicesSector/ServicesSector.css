@@ -3,10 +3,11 @@
     gap: 4rem;
     justify-content: center;
     padding: 3rem;
+    padding-bottom: 15rem;
 }
 
 .services h1 {
-    padding-top: 6rem;
+    padding-top: 15rem;
     color: var(--off-white);
     font-size: 3rem;
 }
