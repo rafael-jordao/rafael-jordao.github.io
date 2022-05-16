@@ -1,5 +1,6 @@
 import { hover } from "@testing-library/user-event/dist/hover";
 import React from "react";
+import FormField from "./components/FormField/FormField";
 import Header from "./components/Header/Header";
 import MainContent from "./components/MainContent/MainContent";
 import ServiceSectors from "./components/ServicesSector/ServicesSector";
@@ -40,30 +41,7 @@ const App = () => {
       <Header />
       <MainContent />
       <ServiceSectors />
-      <div className="dflexContainer">
-        <div className="textContainer">
-          <h1>Como eu posso ajudar?</h1>
-        </div>
-        <div >
-          <form className="formField" >
-            <div className="inputContainer">
-              <label className="labelColor">Insira seu nome</label>
-              <input type="text" className="mainInput"></input>
-            </div>
-            <div className="inputContainer">
-              <label className="labelColor">Insira seu e-mail</label>
-              <input type="e-mail" className="mainInput"></input>
-            </div>
-            <div className="inputContainer">
-              <label className="labelColor">Escreva sua mensagem</label>
-              <textarea className="mainInput"></textarea>
-            </div>
-            <div>
-              <button className="mainButton">Enviar</button>
-            </div>
-          </form>
-        </div>
-      </div>
+      <FormField />
 
       {backToTop && (
         <button style={styleBtn} onClick={scrollUp}>Voltar para o topo</button>

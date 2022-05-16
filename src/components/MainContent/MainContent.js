@@ -8,7 +8,7 @@ const MainContent = () => {
         <div className="mainContainer">
             <div className="textContainer">
                 <p>Olá,</p>
-                <h1>meu nome é Rafael Jordão</h1>
+                <h1>meu nome é <span>Rafael Jordão</span> </h1>
                 <p>Designer | Front-end Developer</p>
                 <a href={Curriculo} download><button>Download CV</button></a>
             </div>
