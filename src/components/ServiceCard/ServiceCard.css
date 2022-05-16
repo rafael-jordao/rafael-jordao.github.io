@@ -12,14 +12,14 @@
     color: var(--off-white);
 }
 .paddingContainer p {
-    padding-top: 1rem;
+    padding: 1.5rem;
 }
 
 .paddingContainer {
-    padding: 2rem;
+    padding: 1rem;
     background-color: var(--darkblue);
     width: 100%;
-    max-width: 300px;
+    max-width: 350px;
     margin: auto;
     height: 100%;
     border-radius: 5px;

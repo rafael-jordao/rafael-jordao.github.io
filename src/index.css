@@ -68,7 +68,7 @@ a {
 .dflexContainer {
     display: flex;
     justify-content: center;
-    padding-top: 15rem;
+    padding-top: 5rem;
     align-items: center;
     padding-bottom: 15rem;
     border-radius: 5px;

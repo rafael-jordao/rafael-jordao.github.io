@@ -1,3 +1,4 @@
+import { hover } from "@testing-library/user-event/dist/hover";
 import React from "react";
 import Header from "./components/Header/Header";
 import MainContent from "./components/MainContent/MainContent";
@@ -30,7 +31,8 @@ const App = () => {
     cursor: 'pointer',
     margin: '1rem',
     transition: '.3s',
-    boxShadow: '0px 10px 20px var(--darkblue)'
+    boxShadow: '0px 10px 20px var(--darkblue)',
+    opacity: 0.3,
   }
 
   return (
@@ -64,7 +66,7 @@ const App = () => {
       </div>
 
       {backToTop && (
-        <button style={styleBtn} onClick={scrollUp}>^</button>
+        <button style={styleBtn} onClick={scrollUp}>Voltar para o topo</button>
       )}
     </div>
   )
