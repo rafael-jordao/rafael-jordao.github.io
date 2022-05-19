@@ -1,8 +1,8 @@
 :root {
-    --darkblue:#0F2027;
-    --mediumblue:#2C5364;
+    --darkblue: #0F2027;
+    --mediumblue: #2C5364;
     --anotherblue: #203A43;
-    --softblue:#4a6ef1;
+    --softblue: #4a6ef1;
     --off-white: #f2f2f2;
 }
 
@@ -39,15 +39,6 @@ a {
     text-decoration: none;
 
     transition: 0.3s;
-}
-
-input::placeholder {
-    color: #668787;
-  }
-
-
-textarea::placeholder {
-    color: #668787;
 }
 
 @media (max-width: 768px) {

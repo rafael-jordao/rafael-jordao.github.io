@@ -38,7 +38,7 @@
 
 
 .mainInput {
-    margin-top: 0.5rem;
+    margin-top: 1rem;
     width: 100%;
     padding: 0.5rem;
     border: 1px solid var(--off-white);
@@ -47,15 +47,26 @@
     color: var(--off-white);
 }
 
-.inputContainer {
-    margin-top: 0.5rem;
-    display: block;
-    color: var(--off-white);
-}
+
 
 .labelColor {
     color: #6f99ae;
 }
+
+.timeOutLabel {
+    color: #6f99ae;
+    transition: 0.3s;
+    margin-top: 0.5rem;
+    position: absolute;
+}
+
+.paddingLabel {
+    padding-top: 0.5rem;
+    transition: 0.3s;
+    position: relative
+}
+
+
 
 @media (max-width: 600px) {
     .dflexContainer {
