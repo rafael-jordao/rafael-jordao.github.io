@@ -50,6 +50,23 @@ textarea::placeholder {
     color: #668787;
 }
 
+.styleBtn {
+    border-radius: 50px;
+    background-color: #4a6ef1;
+    border: none;
+    color: #f2f2f2;
+    cursor: pointer;
+    margin: 1rem;
+    transition: .3s;
+    box-shadow: 0px 10px 20px var(--darkblue);
+    opacity: 0.5;
+    padding: .5rem;
+}
+
+.styleBtn:hover {
+    opacity: 1;
+}
+
 @media (max-width: 768px) {
     html {
         font-size: 80%;

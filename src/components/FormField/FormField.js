@@ -2,47 +2,10 @@ import React from "react";
 import "/Users/rafaeljordao/Documents/my-codes/rafael-jordao.github.io/src/components/FormField/FormField.css"
 
 
-const FormField = () => {
-    // const [inputName, setInputName] = React.useState('')
-    // const [inputEmail, setInputEmail] = React.useState('')
-    // const [inputText, setInputText] = React.useState('')
-    // const [message, setMessage] = React.useState('')
-
-    // const emoji = ':)'
-
-    // const handleChangeName = (e) => {
-    //     setInputName(e.target.value)
-    // }
-
-    // const handleChangeEmail = (e) => {
-    //     setInputEmail(e.target.value)
-    // }
-
-    // const handleChangeText = (e) => {
-    //     setInputText(e.target.value)
-    // }
-
-    // const handleSubmit = (e) => {
-    //     e.preventDefault()
-
-    //     setMessage(
-    //         <div className="paddingLabel"><label className="timeOutLabel">Obrigado {emoji}. Sua mensagem foi enviada.</label></div>
-    //     )
-
-    //     setTimeout(() => {
-    //         setMessage(null)
-    //     }, 2000)
-
-    //     setInputName(e.target.value)
-    //     setInputEmail(e.target.value)
-    //     setInputText(e.target.value)
-    //     setInputName('')
-    //     setInputEmail('')
-    //     setInputText('')
-    // }
+const FormField = ({contact}) => {
 
     return (
-        <div className="dflexContainer">
+        <div ref={contact} className="dflexContainer">
             <div className="textContainer">
                 <h1>Como eu posso ajudar?</h1>
             </div>

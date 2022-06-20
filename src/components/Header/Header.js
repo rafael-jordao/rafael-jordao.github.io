@@ -1,17 +1,16 @@
 import React from "react";
 import "./Header.css"
 
-const Header = () => {
+const Header = ({ scrollToSectors, scrollToContacts,home }) => {
     const [toggleButton, setToggleButton] = React.useState(false)
-    
 
     const handleClick = () => {
         setToggleButton(!toggleButton)
         console.log(toggleButton)
     }
-
+    
     return (
-        <header>
+        <header ref={home}>
             <div>
                 <h1 className="myName">Rafael Jordão</h1>
             </div>
@@ -21,9 +20,9 @@ const Header = () => {
                     <span id="hamburger"></span></button>
 
                 <ul className="menuTopics">
-                    <a href="./"><li className="menuTopic">Home</li></a>
-                    <a href="./"><li className="menuTopic">Serviços</li></a>
-                    <a href="./"><li className="menuTopic">Contato</li></a>
+                    <li className="menuTopic">Home</li>
+                    <li onClick={scrollToSectors} className="menuTopic">Serviços</li>
+                    <li onClick={scrollToContacts} className="menuTopic">Contato</li>
                 </ul>
             </nav>
         </header>

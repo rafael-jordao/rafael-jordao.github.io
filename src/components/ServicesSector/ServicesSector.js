@@ -4,9 +4,10 @@ import IconDev from "/Users/rafaeljordao/Documents/my-codes/rafael-jordao.github
 import IconDesign from "/Users/rafaeljordao/Documents/my-codes/rafael-jordao.github.io/src/assets/iconDesign.png"
 import "/Users/rafaeljordao/Documents/my-codes/rafael-jordao.github.io/src/components/ServicesSector/ServicesSector.css"
 
-const ServiceSectors = () => {
+
+const ServiceSectors = ({services}) => {
     return (
-        <div className="services">
+        <div ref={services} className="services">
             <div className="">
                 <h1 className="titleServices">Serviços</h1>
             </div>
