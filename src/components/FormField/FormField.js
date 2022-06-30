@@ -9,7 +9,7 @@ const FormField = ({contact}) => {
             <div className="textContainer">
                 <h1>Como eu posso ajudar?</h1>
             </div>
-            <div >
+            <div>
                 <form action="https://formsubmit.co/afa93664dc1045b20d9413a4c814aac7" method="POST" className="formField">
                     <input placeholder="Insira seu nome" className="mainInput" type="text" name="name" required />
                     <input placeholder="Insira seu e-mail" className="mainInput" type="email" name="email" required />

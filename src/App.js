@@ -4,6 +4,7 @@ import Header from "./components/Header/Header";
 import MainContent from "./components/MainContent/MainContent";
 import ServiceSectors from "./components/ServicesSector/ServicesSector";
 
+
 const App = () => {
   const home = React.useRef(null);
   const services = React.useRef(null);
@@ -15,6 +16,7 @@ const App = () => {
       behavior: "smooth",
     })
   }
+  
   const scrollToContacts = (elementRef) => {
     window.scrollTo({
       top: elementRef.current.offsetTop,

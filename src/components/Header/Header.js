@@ -5,8 +5,7 @@ const Header = ({ scrollToSectors, scrollToContacts,home }) => {
     const [toggleButton, setToggleButton] = React.useState(false)
 
     const handleClick = () => {
-        setToggleButton(!toggleButton)
-        console.log(toggleButton)
+        setToggleButton(!toggleButton);
     }
     
     return (
@@ -20,7 +19,6 @@ const Header = ({ scrollToSectors, scrollToContacts,home }) => {
                     <span id="hamburger"></span></button>
 
                 <ul className="menuTopics">
-                    <li className="menuTopic">Home</li>
                     <li onClick={scrollToSectors} className="menuTopic">Serviços</li>
                     <li onClick={scrollToContacts} className="menuTopic">Contato</li>
                 </ul>
