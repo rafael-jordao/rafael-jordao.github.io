@@ -16,7 +16,7 @@ const App = () => {
       behavior: "smooth",
     })
   }
-  
+
   const scrollToContacts = (elementRef) => {
     window.scrollTo({
       top: elementRef.current.offsetTop,
@@ -32,10 +32,13 @@ const App = () => {
     console.log('scroll')
   }
 
-  
+
+
   return (
     <div className="App">
-      <Header home={home} scrollToSectors={() => scrollToSectors(services)} scrollToContacts={() => scrollToContacts(contact)} />
+      <Header
+        home={home}
+        scrollToSectors={() => scrollToSectors(services)} scrollToContacts={() => scrollToContacts(contact)} />
       <MainContent />
       <ServiceSectors services={services} />
       <FormField contact={contact} />

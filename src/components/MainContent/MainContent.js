@@ -15,7 +15,7 @@ const MainContent = () => {
             </div>
 
             <div className="photoContainer">
-                <img className="mainPhoto" src={MainPhoto}></img>
+                <img alt="Foto de Perfil" className="mainPhoto" src={MainPhoto}></img>
             </div>
         </div>
     )
